@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    <b>Simple description of what your project do or how to use it</b>
+    <b>Site institucional para advogados e/ou escritórios de advocacia.</b>
 </p>
 
 <p align="center">
@@ -25,13 +25,15 @@
 <h2 id="technologies">💻 Technologies</h2>
 
 - list of all technologies you used
-- react
-- styled components
-- another example
+- html
+- css
+- javascript
 
 <h2 id="started">🚀 Getting started</h2>
 
-Here you describe how to run your project locally
+pnpm ou npm install
+pnpm dev
+npm run dev
 
 <h3>Prerequisites</h3>
 
@@ -45,17 +47,9 @@ Here you list all prerequisites necessary for running your project. For example:
 How to clone your project
 
 ```bash
-git clone your-project-url-in-github
+git clone https://github.com/alexssandrodev/site-advocacia.git
 ```
 
-<h3>Starting</h3>
-
-How to start your project
-
-```bash
-cd project-name
-npm some-command-to-run
-```
 
 <h2 id="colab">🤝 Collaborators</h2>
 
