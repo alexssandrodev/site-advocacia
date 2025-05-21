@@ -36,10 +36,24 @@ body {
 }
 
 .header-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: all 1s ease-in-out;
+}
+
+.header-container.active-bg {
+  background: linear-gradient(45deg, var(--color-black), var(--color-blue));
+}
+
+main {
+  margin-top: 4rem;
 }
 
 .header-container .logo img {
@@ -109,13 +123,31 @@ main .hero {
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 4rem;
+  position: relative;
+}
+
+main .hero .hero-bg {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  filter: blur(1rem);
+  opacity: 0.3;
+  z-index: -2
 }
 
 main .hero .sobre {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 2rem;
+  gap: 4rem;
+}
+
+main .hero .sobre .whats {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #C1891C 0%, 24.092409014701843%, #F9E254 48.18481802940369%, 74.09240901470184%, #C38B1C 100%);
+  padding: 1rem;
+  color: var(--color-blacklight);
 }
 
 main .hero .sobre h1 {
@@ -163,6 +195,10 @@ main .hero .justice img {
   main .hero .sobre {
     width: 50%;
     text-align: initial;
+  }
+
+  .header-container .btn-whats {
+    width: 20rem;
   }
 
 }

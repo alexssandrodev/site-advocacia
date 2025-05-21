@@ -1,8 +1,9 @@
 class Element {
 
-  create(element, className) {
+  create(element, className, id) {
     const el = document.createElement(element);
     el.classList.add(className);
+    el.setAttribute('id', id);
     return el;
   }
 
