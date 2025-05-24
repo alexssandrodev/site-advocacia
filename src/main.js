@@ -27,14 +27,12 @@ function createBoxQuestion() {
 
 createBoxQuestion();
 
-const boxQuestions = el.selectAll('.box-question');
-
 function openQuestion(event) {
   const answers = el.selectAll('.answer');
   answers[event.target.parentNode.id].classList.toggle('active');
 }
 
-function activateBackgroundHeader(event) {
+function activateBackgroundHeader() {
   if (window.scrollY >= 150) {
     header.classList.add('active-bg');
   } else {
